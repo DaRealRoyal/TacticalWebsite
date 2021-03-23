@@ -162,20 +162,22 @@
 				<p>Wenn du Fragen oder Ideen hast, kannst du dich hier gerne bei uns melden</p>
 				<div class="split style3">
 					<section>
-						<form method="post" action="MS.html" data-netlify="true">
+						<form method="post" action="MS.html" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="message">
 							<div class="fields">
 								<div class="field half">
 									<label for="name">Name</label>
 									<input type="text" name="name" id="name" />
 								</div>
 								<div class="field half">
-									<label for="email">Email</label>
+									<label for="email">E-Mail</label>
 									<input type="text" name="email" id="email" />
 								</div>
 								<div class="field">
-									<label for="message">Message</label>
+									<label for="message">Nachricht</label>
 									<textarea name="message" id="message" rows="5"></textarea>
+									<input class="d-none" name="message" placeholder="message"/>
 								</div>
+								<div class="field" data-netlify-recaptcha="true"></div>
 							</div>
 							<ul class="actions">
 								<li><a href="" class="button submit">Send Message</a></li>
