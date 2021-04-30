@@ -179,15 +179,18 @@
 				<p>Wenn du Fragen oder Ideen hast, kannst du dich hier gerne bei uns melden</p>
 				<div class="split style3">
 					<section>
+						<form>
+							<input type="text" required autocomplete="email">
+						</form>
 						<form method="post" action="MS.html" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="message2">
 							<div class="fields">
 								<div class="field half">
 									<label for="name">Name</label>
-									<input type="text" name="name" id="name" required>
+									<input type="text" name="name" id="name" required autocomplete="name">
 								</div>
 								<div class="field half">
 									<label for="email">E-Mail</label>
-									<input type="text" name="email" id="email" required>
+									<input type="text" name="email" id="email" required autocomplete="email">
 								</div>
 								<div class="field">
 									<label for="message">Nachricht</label>
@@ -197,7 +200,7 @@
 								<div class="field" data-netlify-recaptcha="true"></div>
 							</div>
 							<ul class="actions">
-								<li><a href="" class="button submit">Abschicken</a></li>
+								<li><button class="button" type="submit">Abschicken</button></li>
 							</ul>
 						</form>
 					</section>
