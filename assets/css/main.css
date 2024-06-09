@@ -3895,6 +3895,20 @@ body.is-preload #sidebar nav ul li {
 	margin-bottom: 3em;
 }
 
+body {
+	overflow: hidden;
+}
+
+.snap-container {
+	overflow-y: scroll;
+	height: 100vh;
+	scroll-snap-type: y mandatory;
+}
+
+.snap-align-start {
+	scroll-snap-align: start;
+}
+
 [data-tooltip] {
 	position: relative;
 }
